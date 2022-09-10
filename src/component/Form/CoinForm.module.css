@@ -2,6 +2,23 @@
     font-family: "Roboto Condensed", Roboto, Helvetica, sans-serif;
 }
 
+.actions {
+    margin-top: 16px;
+}
+
 .actions button {
     margin-right: 8px;
 }
+
+.Result {
+    margin-top: 10px;
+}
+
+.Result .title {
+    font-weight: bold;
+}
+
+.Result span {
+    margin-right: 8px;
+}
+

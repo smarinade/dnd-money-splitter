@@ -11,7 +11,7 @@ function App() {
     return (
     <main>
         <article className={styles.article}>
-            <h1><abbr title="Dungeons and Dragons">DnD</abbr> Coin Splitter</h1>
+            <h1 className={styles.title}><abbr title="Dungeons and Dragons">DnD</abbr> Coin Splitter</h1>
             <CoinForm></CoinForm>
         </article>
     </main>

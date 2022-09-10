@@ -9,13 +9,13 @@ import {Adventurer} from "../Adventurer/Adventurer";
 type CoinFormProps = {}
 
 function CoinForm(props: CoinFormProps) {
-    const [output, setOutput] = useState("");
+    const [coins, setCoins] = useState<Coins[]>([]);
 
     const handleDivide = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
 
-        const coins : Coins = {
+        const coins: Coins = {
             platinum: Number(data.get('platinum')),
             gold: Number(data.get('gold')),
             electrum: Number(data.get('electrum')),
@@ -23,18 +23,21 @@ function CoinForm(props: CoinFormProps) {
             copper: Number(data.get('copper')),
         };
 
-        const dividedCoins : Coins[] = divide(coins, Number(data.get('adventurers')));
+        const dividedCoins: Coins[] = divide(coins, Number(data.get('adventurers')));
+        setCoins(dividedCoins)
+    };
 
-        setOutput(dividedCoins.map(coins => JSON.stringify(coins)).join(','));
+    const handleReset = () => {
+        setCoins([]);
     };
 
     return (
-        <form className={styles.CoinForm} onSubmit={handleDivide}>
-            <Coin label={"Platinum"} name={"platinum"}></Coin>
-            <Coin label={"Gold"} name={"gold"} value={10}></Coin>
-            <Coin label={"Electrum"} name={"electrum"}></Coin>
-            <Coin label={"Silver"} name={"silver"}></Coin>
-            <Coin label={"Copper"} name={"copper"}></Coin>
+        <form className={styles.CoinForm} onSubmit={handleDivide} onReset={handleReset}>
+            <Coin label={"Platinum (PP)"} name={"platinum"}></Coin>
+            <Coin label={"Gold (GP)"} name={"gold"} value={10}></Coin>
+            <Coin label={"Electrum (EP)"} name={"electrum"}></Coin>
+            <Coin label={"Silver (SP)"} name={"silver"}></Coin>
+            <Coin label={"Copper (CP)"} name={"copper"}></Coin>
 
             <Adventurer></Adventurer>
 
@@ -47,9 +50,20 @@ function CoinForm(props: CoinFormProps) {
                 </Button>
             </div>
 
-            <div>
-                {output}
-            </div>
+            <output>
+                {coins.map((coin, index) => {
+                    return (
+                        <div className={styles.Result}>
+                            <div className={styles.title}>Adventurer #{index + 1} receives:</div>
+                            <span>PP: {coin.platinum},</span>
+                            <span>GP: {coin.gold},</span>
+                            <span>EP: {coin.electrum},</span>
+                            <span>SP: {coin.silver},</span>
+                            <span>CP: {coin.copper}</span>
+                        </div>
+                    );
+                })}
+            </output>
         </form>
     );
 }
