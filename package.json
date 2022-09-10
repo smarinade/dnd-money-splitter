@@ -18,6 +18,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gp-pages-d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,7 +45,8 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {
-    "@testing-library/dom": "^8.16.0"
+    "@testing-library/dom": "^8.16.0",
+    "gh-pages": "^4.0.0"
   },
   "keywords": [],
   "author": "",
