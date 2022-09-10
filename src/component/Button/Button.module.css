@@ -1,8 +1,6 @@
 .Button {
-    background-color: #40d250;
-    border: 1px solid transparent;
+    border: 1px solid #8137af;
     border-radius: 3px;
-    color: rgb(255, 255, 255);
     display: inline-block;
     font-family: "Roboto Condensed", Roboto, Helvetica, sans-serif;
     font-size: 10px;
@@ -10,9 +8,22 @@
     text-transform: uppercase;
     transition: all 50ms ease 0s;
     cursor: pointer;
+    color: #8137af;
+    background-color: #fff;
 }
 
 .Button:hover {
+    box-shadow: 0 0 2px rgb(116 50 158);
+    background-color: #fff;
+}
+
+.ButtonPositive {
+    border: 1px solid transparent;
+    background-color: #40d250;
+    color: #fff;
+}
+
+.ButtonPositive:hover {
     background-color: rgb(43, 180, 58);
     box-shadow: rgb(33 139 44) 0 0 10px 2px inset;
 }

@@ -39,8 +39,12 @@ function CoinForm(props: CoinFormProps) {
             <Adventurer></Adventurer>
 
             <div className={styles.actions}>
-                <Button></Button>
-                <Button></Button>
+                <Button variant={"Positive"} type={"submit"}>
+                    Divide
+                </Button>
+                <Button type={"reset"}>
+                    Reset
+                </Button>
             </div>
 
             <div>

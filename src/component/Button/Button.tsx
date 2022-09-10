@@ -1,13 +1,16 @@
-import React, {useState} from 'react';
+import React from 'react';
 import styles from "./Button.module.css"
 
-type ButtonProps = {}
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+    variant?: "Positive"
+}
 
-function Button(props: ButtonProps) {
+function Button({type, variant, children}: ButtonProps) {
 
     return (
-        <button className={styles.Button} type={"submit"}>Divide</button>
+        <button className={`${styles.Button} ${variant ? styles.ButtonPositive : ''}`} type={type}>{children}</button>
     );
+
 }
 
 export default Button;
