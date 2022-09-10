@@ -53,13 +53,9 @@ function CoinForm(props: CoinFormProps) {
             <output>
                 {coins.map((coin, index) => {
                     return (
-                        <div className={styles.Result}>
+                        <div className={styles.Result} key={index}>
                             <div className={styles.title}>Adventurer #{index + 1} receives:</div>
-                            <span>PP: {coin.platinum},</span>
-                            <span>GP: {coin.gold},</span>
-                            <span>EP: {coin.electrum},</span>
-                            <span>SP: {coin.silver},</span>
-                            <span>CP: {coin.copper}</span>
+                            <div>PP: {coin.platinum}, GP: {coin.gold}, EP: {coin.electrum}, SP: {coin.silver}, CP: {coin.copper}</div>
                         </div>
                     );
                 })}
