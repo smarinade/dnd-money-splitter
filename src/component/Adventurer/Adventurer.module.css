@@ -1,21 +1,21 @@
-.Coin {
+.Adventurer {
     display: flex;
     align-items: center;
     font-family: Roboto, Helvetica, sans-serif;
     font-size: 16px;
 }
 
-.Coin .icon {
+.Adventurer .icon {
     width: 24px;
     height: 24px;
     margin-right: 8px;
 }
 
-.Coin .info {
+.Adventurer .info {
     flex: 1 1 0%;
 }
 
-.Coin .value {
+.Adventurer .value {
     max-width: 80px;
     border: 1px solid transparent;
     border-radius: 2px;
@@ -25,7 +25,7 @@
     text-align: right;
 }
 
-.Coin .value:focus-within {
+.Adventurer .value:focus-within {
     outline: 0;
     border: 1px solid black;
 }

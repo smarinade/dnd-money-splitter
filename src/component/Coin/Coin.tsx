@@ -1,19 +1,20 @@
 import React from 'react';
+import styles from './Coin.module.css';
+import {CoinIcon} from "./Icon/CoinIcon";
 
 type CoinProps = {
     label: string,
-    name: string
+    name: 'platinum' | 'gold' | 'electrum' | 'silver' | 'copper'
     value?: number
 }
 
-function Coin({label, name, value = 0} : CoinProps) {
+function Coin({label, name, value = 0}: CoinProps) {
     return (
-        <div className="coin">
-            <label>
-                {label}
-                <input name={name} type="number" defaultValue={value} min={0} />
-            </label>
-        </div>
+        <label className={styles.Coin}>
+            <CoinIcon type={name}></CoinIcon>
+            <span className={styles.info}>{label}</span>
+            <input className={styles.value} name={name} type="number" defaultValue={value} min={0}/>
+        </label>
     );
 }
 

@@ -1,3 +1,31 @@
 .Coin {
-    background-color: red;
+    display: flex;
+    align-items: center;
+    font-family: Roboto, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.Coin .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.Coin .info {
+    flex: 1 1 0%;
+}
+
+.Coin .value {
+    max-width: 80px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-weight: bold;
+    line-height: 28px;
+    padding: 1px 12px 1px 0px;
+    text-align: right;
+}
+
+.Coin .value:focus-within {
+    outline: 0;
+    border: 1px solid black;
 }

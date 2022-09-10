@@ -1,19 +1,17 @@
+import {divide} from "./CoinService";
 import {Coins} from "./Coins";
-import {transformCoinsToCopper} from "./CoinTransformService";
 
-export const divide = (coins: Coins, adventurers: number) : Coins[] => {
-    const totalCopper = transformCoinsToCopper(coins);
-    const dividedCopper = Math.floor(totalCopper / adventurers);
-    const remainingCopper = totalCopper % adventurers;
+describe('Coin Service', () => {
 
-    const pouches = [];
-    for (let i = 0; i < adventurers -1; i++) {
-        pouches.push(new Coins(0, 0, 0, 0, dividedCopper))
-    }
+    it('should divide all coins equally between 2 players', () => {
+        const coins: Coins[] = divide(new Coins(1, 1, 0, 1, 1), 2);
 
-    if (remainingCopper) {
-        pouches.push(new Coins(0, 0, 0, 0, remainingCopper));
-    }
+        const pouch1 = new Coins(0, 5, 1, 0, 5);
+        const pouch2 = new Coins(0, 5, 1, 0, 5);
+        const remaining = new Coins(0, 0, 0, 0, 1);
 
-    return pouches;
-};
+        expect(coins).toStrictEqual([pouch1, pouch2, remaining]);
+    });
+});
+
+export {}
