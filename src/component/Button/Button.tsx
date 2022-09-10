@@ -5,10 +5,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     variant?: "Positive"
 }
 
-function Button({type, variant, children}: ButtonProps) {
+function Button({type, variant, onClick, children}: ButtonProps) {
 
     return (
-        <button className={`${styles.Button} ${variant ? styles.ButtonPositive : ''}`} type={type}>{children}</button>
+        <button className={`${styles.Button} ${variant ? styles.ButtonPositive : ''}`} type={type} onClick={onClick}>{children}</button>
     );
 
 }

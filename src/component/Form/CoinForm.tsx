@@ -8,6 +8,13 @@ import {Adventurer} from "../Adventurer/Adventurer";
 
 type CoinFormProps = {}
 
+const copyHandler = (coin : Coins) => {
+    const data = `PP: ${coin.platinum}, GP: ${coin.gold}, EP: ${coin.electrum}, SP: ${coin.silver}, CP: ${coin.copper}`;
+    navigator.clipboard.writeText(data).then(() => {
+        alert("Copied to clipboard");
+    });
+};
+
 function CoinForm(props: CoinFormProps) {
     const [coins, setCoins] = useState<Coins[]>([]);
 
@@ -55,7 +62,12 @@ function CoinForm(props: CoinFormProps) {
                     return (
                         <div className={styles.Result} key={index}>
                             <div className={styles.title}>Adventurer #{index + 1} receives:</div>
-                            <div>PP: {coin.platinum}, GP: {coin.gold}, EP: {coin.electrum}, SP: {coin.silver}, CP: {coin.copper}</div>
+                            <div className={styles.line}>
+                                <span>PP: {coin.platinum}, GP: {coin.gold}, EP: {coin.electrum}, SP: {coin.silver}, CP: {coin.copper}</span>
+                                <Button onClick={() => copyHandler(coin)}>
+                                    Copy
+                                </Button>
+                            </div>
                         </div>
                     );
                 })}

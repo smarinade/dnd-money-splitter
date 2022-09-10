@@ -18,6 +18,11 @@
     font-weight: bold;
 }
 
+.Result .line {
+    display: flex;
+    align-items: center;
+}
+
 .Result span {
     margin-right: 8px;
 }
