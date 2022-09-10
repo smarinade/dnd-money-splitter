@@ -5,7 +5,7 @@ import styles from "./App.module.css";
 function App() {
 
     useEffect(() => {
-        document.title = "Coin Splitter";
+        document.title = "DnD Coin Splitter";
     }, []);
 
     return (
