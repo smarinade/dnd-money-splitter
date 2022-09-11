@@ -2,7 +2,12 @@ import CoinForm from "./component/Form/CoinForm";
 import {useEffect} from "react";
 import styles from "./App.module.css";
 
+import ReactGA from 'react-ga';
+
 function App() {
+
+    const TRACKING_ID = "UA-240800186-1";
+    ReactGA.initialize(TRACKING_ID);
 
     useEffect(() => {
         document.title = "DnD Coin Splitter";
