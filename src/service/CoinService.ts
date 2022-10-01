@@ -17,7 +17,3 @@ export const divide = (coins: Coins, adventurers: number) : Coins[] => {
 
     return pouches;
 };
-
-const exchangeCopper = (dividedCopper: number) : Coins => {
-    return new Coins(0,0,0,0,0);
-};
