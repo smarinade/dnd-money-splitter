@@ -1,8 +1,8 @@
 import CoinForm from "./component/Form/CoinForm";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
 import styles from "./App.module.css";
-
 import ReactGA from 'react-ga';
+import {Settings} from "./component/Settings/Settings";
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
         <article className={styles.article}>
             <h1 className={styles.title}><abbr title="Dungeons and Dragons">DnD</abbr> Coin Splitter</h1>
             <CoinForm></CoinForm>
+            <Settings></Settings>
         </article>
     </main>
   );

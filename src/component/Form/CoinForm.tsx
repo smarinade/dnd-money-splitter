@@ -31,7 +31,7 @@ function CoinForm(props: CoinFormProps) {
         };
 
         const dividedCoins: Coins[] = divide(coins, Number(data.get('adventurers')));
-        setCoins(dividedCoins)
+        setCoins(dividedCoins);
     };
 
     const handleReset = () => {
@@ -40,13 +40,14 @@ function CoinForm(props: CoinFormProps) {
 
     return (
         <form className={styles.CoinForm} onSubmit={handleDivide} onReset={handleReset}>
-            <Coin label={"Platinum (PP)"} name={"platinum"}></Coin>
-            <Coin label={"Gold (GP)"} name={"gold"} value={10}></Coin>
-            <Coin label={"Electrum (EP)"} name={"electrum"}></Coin>
-            <Coin label={"Silver (SP)"} name={"silver"}></Coin>
-            <Coin label={"Copper (CP)"} name={"copper"}></Coin>
-
-            <Adventurer></Adventurer>
+            <section>
+                <Coin label={"Platinum (PP)"} name={"platinum"}></Coin>
+                <Coin label={"Gold (GP)"} name={"gold"} value={10}></Coin>
+                <Coin label={"Electrum (EP)"} name={"electrum"}></Coin>
+                <Coin label={"Silver (SP)"} name={"silver"}></Coin>
+                <Coin label={"Copper (CP)"} name={"copper"}></Coin>
+                <Adventurer value={2}></Adventurer>
+            </section>
 
             <div className={styles.actions}>
                 <Button variant={"Positive"} type={"submit"}>

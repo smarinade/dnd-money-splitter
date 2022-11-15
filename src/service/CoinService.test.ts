@@ -12,6 +12,7 @@ describe('Coin Service', () => {
 
         expect(coins).toStrictEqual([pouch1, pouch2, remaining]);
     });
+
 });
 
 export {}
