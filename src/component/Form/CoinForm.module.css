@@ -10,20 +10,25 @@
     margin-right: 8px;
 }
 
-.Result {
+.output {
+
+}
+
+.outputAction {
     margin-top: 10px;
 }
 
-.Result .title {
-    font-weight: bold;
+.subtitle {
+    font-family: Roboto Condensed,Roboto,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
-.Result .line {
-    display: flex;
-    align-items: center;
+.text {
+    font-family: Roboto,Helvetica,sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    margin: 0;
 }
-
-.Result span {
-    margin-right: 8px;
-}
-
