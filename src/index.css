@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background:
+          url("/public/builder1k.jpg") top center no-repeat,
+          url("/public/background_texture.png")
+;
 }
 
 code {

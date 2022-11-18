@@ -3,6 +3,7 @@ import {useEffect} from "react";
 import styles from "./App.module.css";
 
 import ReactGA from 'react-ga';
+import Footer from "./component/Footer/Footer";
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
             <h1 className={styles.title}><abbr title="Dungeons and Dragons">DnD</abbr> Coin Splitter</h1>
             <CoinForm></CoinForm>
         </article>
+        <Footer />
     </main>
   );
 }
