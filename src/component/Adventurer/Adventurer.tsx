@@ -10,6 +10,6 @@ export function Adventurer({value = 2}: AdventurerProps) {
     return (<label className={styles.Adventurer}>
         <SportsMartialArtsIcon className={styles.icon}></SportsMartialArtsIcon>
         <span className={styles.info}>Adventurers</span>
-        <input className={styles.value} name="adventurers" type="number" defaultValue={value} min={0}/>
+        <input className={styles.value} name="adventurers" type="number" inputMode="decimal" defaultValue={value} min={0}/>
     </label>);
 }

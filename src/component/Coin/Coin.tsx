@@ -13,7 +13,7 @@ function Coin({label, name, value = 0}: CoinProps) {
         <label className={styles.Coin}>
             <CoinIcon type={name}></CoinIcon>
             <span className={styles.info}>{label}</span>
-            <input className={styles.value} name={name} type="number" defaultValue={value} min={0}/>
+            <input className={styles.value} name={name} type="number" inputMode="decimal" defaultValue={value} min={0}/>
         </label>
     );
 }
