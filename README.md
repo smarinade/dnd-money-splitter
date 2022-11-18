@@ -1,7 +1,7 @@
-# DnD Money Splitter
+# 🦉 Looters
 
-Easily distribute the dragon hoard between party members.
+An application to easily distribute the dragon hoard between the party members of your Dungeons and Dragons campaign.
 
-## Try it out!
+## ⚔️ Try it out!
 
 [Demo](https://smarinade.github.io/dnd-money-splitter/)

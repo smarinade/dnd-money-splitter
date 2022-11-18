@@ -11,13 +11,14 @@ function App() {
     ReactGA.initialize(TRACKING_ID);
 
     useEffect(() => {
-        document.title = "DnD Coin Splitter";
+        document.title = "Looters";
     }, []);
 
     return (
     <main>
         <article className={styles.article}>
-            <h1 className={styles.title}><abbr title="Dungeons and Dragons">DnD</abbr> Coin Splitter</h1>
+            <h1 className={styles.title}>Looters</h1>
+            <p className={styles.description}>Divide your loot evenly between your players.</p>
             <CoinForm></CoinForm>
         </article>
         <Footer />
