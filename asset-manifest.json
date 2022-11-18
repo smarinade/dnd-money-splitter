@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dnd-money-splitter/static/css/main.17d6306f.css",
-    "main.js": "/dnd-money-splitter/static/js/main.fb22bf12.js",
+    "main.css": "/dnd-money-splitter/static/css/main.a8cfdd77.css",
+    "main.js": "/dnd-money-splitter/static/js/main.a6f49970.js",
     "static/js/496.252e4c3b.chunk.js": "/dnd-money-splitter/static/js/496.252e4c3b.chunk.js",
     "static/media/background_texture.png": "/dnd-money-splitter/static/media/background_texture.9efbaca70f36e40effd0.png",
     "static/media/builder1k.jpg": "/dnd-money-splitter/static/media/builder1k.8aa96c3bdcbfd64e8870.jpg",
     "index.html": "/dnd-money-splitter/index.html",
-    "main.17d6306f.css.map": "/dnd-money-splitter/static/css/main.17d6306f.css.map",
-    "main.fb22bf12.js.map": "/dnd-money-splitter/static/js/main.fb22bf12.js.map",
+    "main.a8cfdd77.css.map": "/dnd-money-splitter/static/css/main.a8cfdd77.css.map",
+    "main.a6f49970.js.map": "/dnd-money-splitter/static/js/main.a6f49970.js.map",
     "496.252e4c3b.chunk.js.map": "/dnd-money-splitter/static/js/496.252e4c3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17d6306f.css",
-    "static/js/main.fb22bf12.js"
+    "static/css/main.a8cfdd77.css",
+    "static/js/main.a6f49970.js"
   ]
 }
