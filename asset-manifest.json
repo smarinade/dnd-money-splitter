@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/dnd-money-splitter/static/css/main.a8cfdd77.css",
-    "main.js": "/dnd-money-splitter/static/js/main.a6f49970.js",
-    "static/js/496.252e4c3b.chunk.js": "/dnd-money-splitter/static/js/496.252e4c3b.chunk.js",
-    "static/media/background_texture.png": "/dnd-money-splitter/static/media/background_texture.9efbaca70f36e40effd0.png",
-    "static/media/builder1k.jpg": "/dnd-money-splitter/static/media/builder1k.8aa96c3bdcbfd64e8870.jpg",
-    "index.html": "/dnd-money-splitter/index.html",
-    "main.a8cfdd77.css.map": "/dnd-money-splitter/static/css/main.a8cfdd77.css.map",
-    "main.a6f49970.js.map": "/dnd-money-splitter/static/js/main.a6f49970.js.map",
-    "496.252e4c3b.chunk.js.map": "/dnd-money-splitter/static/js/496.252e4c3b.chunk.js.map"
+    "main.css": "/looters/static/css/main.92d01e8e.css",
+    "main.js": "/looters/static/js/main.29b525db.js",
+    "static/js/496.70a78dd9.chunk.js": "/looters/static/js/496.70a78dd9.chunk.js",
+    "static/media/background_texture.png": "/looters/static/media/background_texture.9efbaca70f36e40effd0.png",
+    "static/media/builder1k.jpg": "/looters/static/media/builder1k.8aa96c3bdcbfd64e8870.jpg",
+    "index.html": "/looters/index.html",
+    "main.92d01e8e.css.map": "/looters/static/css/main.92d01e8e.css.map",
+    "main.29b525db.js.map": "/looters/static/js/main.29b525db.js.map",
+    "496.70a78dd9.chunk.js.map": "/looters/static/js/496.70a78dd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a8cfdd77.css",
-    "static/js/main.a6f49970.js"
+    "static/css/main.92d01e8e.css",
+    "static/js/main.29b525db.js"
   ]
 }
