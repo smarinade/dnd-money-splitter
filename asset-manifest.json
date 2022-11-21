@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/looters/static/css/main.c2eb1cf1.css",
+    "main.css": "/looters/static/css/main.94ff572f.css",
     "main.js": "/looters/static/js/main.29b525db.js",
     "static/js/496.70a78dd9.chunk.js": "/looters/static/js/496.70a78dd9.chunk.js",
     "static/media/background_texture.png": "/looters/static/media/background_texture.9efbaca70f36e40effd0.png",
     "static/media/builder1k.jpg": "/looters/static/media/builder1k.8aa96c3bdcbfd64e8870.jpg",
     "index.html": "/looters/index.html",
-    "main.c2eb1cf1.css.map": "/looters/static/css/main.c2eb1cf1.css.map",
+    "main.94ff572f.css.map": "/looters/static/css/main.94ff572f.css.map",
     "main.29b525db.js.map": "/looters/static/js/main.29b525db.js.map",
     "496.70a78dd9.chunk.js.map": "/looters/static/js/496.70a78dd9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2eb1cf1.css",
+    "static/css/main.94ff572f.css",
     "static/js/main.29b525db.js"
   ]
 }
