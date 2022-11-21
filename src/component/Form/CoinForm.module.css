@@ -1,5 +1,5 @@
 .CoinForm {
-    font-family: "Roboto Condensed", Roboto, Helvetica, sans-serif;
+
 }
 
 .actions {
@@ -20,7 +20,7 @@
 
 .subtitle {
     font-family: Roboto Condensed,Roboto,Helvetica,sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size-text);
     font-weight: 700;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -28,7 +28,7 @@
 
 .text {
     font-family: Roboto,Helvetica,sans-serif;
-    font-size: 13px;
+    font-size: var(--font-size-desciption);
     line-height: 1.4;
     margin: 0;
 }

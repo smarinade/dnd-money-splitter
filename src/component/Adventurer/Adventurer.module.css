@@ -1,8 +1,7 @@
 .Adventurer {
     display: flex;
     align-items: center;
-    font-family: Roboto, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: var(--font-size-text);
 }
 
 .Adventurer .icon {
@@ -12,7 +11,7 @@
 }
 
 .Adventurer .info {
-    flex: 1 1 0%;
+    flex: 1 1 0;
 }
 
 .Adventurer .value {
@@ -21,7 +20,7 @@
     border-radius: 2px;
     font-weight: bold;
     line-height: 28px;
-    padding: 1px 12px 1px 0px;
+    padding: 1px 12px 1px 0;
     text-align: right;
 }
 
