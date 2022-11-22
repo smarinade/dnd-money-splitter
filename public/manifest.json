@@ -25,7 +25,7 @@
     }
   ],
   "theme_color": "#ff0006",
-  "background_color": "#ff0006",
+  "background_color": "#242527",
   "display": "browser",
   "scope": "/looters",
   "start_url": "/looters"
