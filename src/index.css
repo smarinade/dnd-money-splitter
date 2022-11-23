@@ -10,8 +10,3 @@ body {
           url("/public/background_texture.png")
 ;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

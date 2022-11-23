@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from "./Footer.module.css"
+import Coffee from "../Coffee/Coffee";
 
 interface FooterProps {
 
@@ -9,7 +10,8 @@ function Footer({}: FooterProps) {
 
     return (
         <footer className={styles.footer}>
-            <div className={styles.copywright}>©2022 SuperMarinade | All Rights Reserved</div>
+            <Coffee></Coffee>
+            <div className={styles.copywright}>©2022 Looters | All Rights Reserved</div>
         </footer>
     );
 
