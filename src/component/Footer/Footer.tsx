@@ -2,11 +2,7 @@ import React from 'react';
 import styles from "./Footer.module.css"
 import Coffee from "../Coffee/Coffee";
 
-interface FooterProps {
-
-}
-
-function Footer({}: FooterProps) {
+function Footer() {
 
     return (
         <footer className={styles.footer}>

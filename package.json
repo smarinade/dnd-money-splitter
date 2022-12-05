@@ -1,6 +1,7 @@
 {
   "homepage": "https://smarin.github.io/looters",
   "name": "looters",
+  "description": "is a tool to help D&D adventurers divide the riches they encounter in their adventure.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,7 @@
     "@types/react-dom": "^18.0.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.4",
     "react-ga": "^3.3.1",
     "react-scripts": "5.0.1",
     "typescript": "^4.9.3",
@@ -48,7 +50,6 @@
       "last 1 safari version"
     ]
   },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "devDependencies": {
     "@testing-library/dom": "^8.19.0",
