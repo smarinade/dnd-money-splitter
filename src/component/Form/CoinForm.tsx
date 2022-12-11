@@ -52,7 +52,7 @@ function CoinForm(props: CoinFormProps) {
         <>
             <form className={styles.CoinForm} onSubmit={handleDivide} onReset={handleReset}>
                 <Coin label={"Platinum (PP)"} description={"1 pp = 10 gp"} name={"platinum"}></Coin>
-                <Coin label={"Gold (GP)"} name={"gold"} value={10}></Coin>
+                <Coin label={"Gold (GP)"} name={"gold"}></Coin>
                 <Coin label={"Electrum (EP)"} description={"1 gp = 2 ep"} name={"electrum"}></Coin>
                 <Coin label={"Silver (SP)"} description={"1 gp = 10 sp"} name={"silver"}></Coin>
                 <Coin label={"Copper (CP)"} description={"1 gp = 100 cp"} name={"copper"}></Coin>
