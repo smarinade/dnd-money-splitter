@@ -1,17 +1,15 @@
 import React, {useState} from 'react';
-import {Coins} from "../../service/Coins";
-import {divide, DividedCoins} from "../../service/CoinService";
 import Coin from "../Coin/Coin";
 import styles from "./CoinForm.module.css"
 import Button from "../Button/Button";
 import {Adventurer} from "../Adventurer/Adventurer";
-
-type CoinFormProps = {}
+import {divide, DividedCoins} from "../../domain/CoinService/CoinService";
+import {CoinPouch} from "../../domain/model/CoinPouch";
 
 const getClipboardText = (dividedCoins: DividedCoins) => 'PP: ' + dividedCoins.dividedCoins[0].platinum + ',' +
     'GP: ' + dividedCoins.dividedCoins[0].gold + ',' +
-    'SP: ' + dividedCoins.dividedCoins[0].silver + ',' +
     'EP: ' + dividedCoins.dividedCoins[0].electrum + ',' +
+    'SP: ' + dividedCoins.dividedCoins[0].silver + ',' +
     'CP: ' + dividedCoins.dividedCoins[0].copper
 ;
 
@@ -22,14 +20,14 @@ const copyHandler = (dividedCoins: DividedCoins) => {
     });
 };
 
-function CoinForm(props: CoinFormProps) {
+function CoinForm() {
     const [dividedCoins, setDividedCoins] = useState<DividedCoins | undefined>();
 
     const handleDivide = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
 
-        const coins: Coins = {
+        const coins: CoinPouch = {
             platinum: Number(data.get('platinum')),
             gold: Number(data.get('gold')),
             electrum: Number(data.get('electrum')),

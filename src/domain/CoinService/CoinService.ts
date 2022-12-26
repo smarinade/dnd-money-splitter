@@ -1,12 +1,12 @@
-import {Coins} from "./Coins";
-import {convertCoinsToCopper, convertCopperToCoins} from "./ConversionService";
+import {CoinPouch} from "../model/CoinPouch";
+import {convertCoinsToCopper, convertCopperToCoins} from "../ConversionService/ConversionService";
 
 export interface DividedCoins {
-    dividedCoins: Coins[],
-    remainingCoins?: Coins
+    dividedCoins: CoinPouch[],
+    remainingCoins?: CoinPouch
 }
 
-export const divide = (coins: Coins, adventurers: number) : DividedCoins => {
+export const divide = (coins: CoinPouch, adventurers: number) : DividedCoins => {
     const totalCopper = convertCoinsToCopper(coins);
     const dividedCopper = Math.floor(totalCopper / adventurers);
     const remainingCopper = totalCopper % adventurers;
@@ -24,7 +24,7 @@ export const divide = (coins: Coins, adventurers: number) : DividedCoins => {
     return {dividedCoins};
 };
 
-export const oldDivide = (coins: Coins, adventurers: number) : Coins[] => {
+export const oldDivide = (coins: CoinPouch, adventurers: number) : CoinPouch[] => {
     const totalCopper = convertCoinsToCopper(coins);
     const dividedCopper = Math.floor(totalCopper / adventurers);
     const remainingCopper = totalCopper % adventurers;

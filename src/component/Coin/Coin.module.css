@@ -27,6 +27,7 @@
 }
 
 .Coin .value {
+    box-sizing: border-box;
     max-width: 80px;
     border: 1px solid transparent;
     border-radius: 2px;

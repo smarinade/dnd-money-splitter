@@ -1,5 +1,5 @@
 import React from "react"
-import analytics from "../service/Analytics";
+import analytics from "../domain/Analytics";
 
 export default function useGoogleAnalytics() {
 

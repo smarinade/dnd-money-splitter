@@ -1,4 +1,4 @@
-export class Coins {
+export class CoinPouch {
     public platinum: number;
     public gold: number;
     public electrum: number;
