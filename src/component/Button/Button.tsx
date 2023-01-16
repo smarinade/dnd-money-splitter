@@ -1,16 +1,20 @@
-import React from 'react';
-import styles from "./Button.module.css"
+import React from "react";
+import styles from "./Button.module.css";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-    variant?: "Positive"
+  variant?: 'Positive'
 }
 
-function Button({type, variant, onClick, children}: ButtonProps) {
-
-    return (
-        <button className={`${styles.Button} ${variant ? styles.ButtonPositive : ''}`} type={type} onClick={onClick}>{children}</button>
-    );
-
+function Button({ type, variant, onClick, children }: ButtonProps) {
+  return (
+    <button
+      className={`${styles.Button} ${variant ? styles.ButtonPositive : ''}`}
+      type={type}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
 }
 
-export default Button;
+export default Button

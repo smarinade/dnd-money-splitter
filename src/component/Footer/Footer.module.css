@@ -1,12 +1,12 @@
 .footer {
-    padding: 5px 10px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #242527;
-    color: #979AA4;
+  padding: 5px 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #242527;
+  color: #979aa4;
 }

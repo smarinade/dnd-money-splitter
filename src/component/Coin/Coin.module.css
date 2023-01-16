@@ -1,44 +1,43 @@
 .Coin {
-    display: flex;
-    align-items: center;
-    font-family: Roboto, Helvetica, sans-serif;
-    font-size: var(--font-size-text);
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: var(--font-size-text);
+  margin-top: 5px;
 }
 
 .Coin .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 .Coin .label {
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
 }
 
 .Coin .info {
-
 }
 
 .Coin .description {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 .Coin .value {
-    box-sizing: border-box;
-    max-width: 80px;
-    border: 1px solid transparent;
-    border-radius: 2px;
-    font-weight: bold;
-    line-height: 28px;
-    padding: 1px 12px 1px 0;
-    text-align: right;
-    font-size: var(--font-size-text);
+  box-sizing: border-box;
+  max-width: 80px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 1px 12px 1px 0;
+  text-align: right;
+  font-size: var(--font-size-text);
 }
 
 .Coin .value:focus-within {
-    outline: 0;
-    border: 1px solid black;
+  outline: 0;
+  border: 1px solid black;
 }

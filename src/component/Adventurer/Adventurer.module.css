@@ -1,37 +1,36 @@
 .Adventurer {
-    display: flex;
-    align-items: center;
-    font-size: var(--font-size-text);
-    margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-text);
+  margin-top: 5px;
 }
 
 .Adventurer .icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
 }
 
 .Adventurer .info {
-    flex: 1 1 0;
+  flex: 1 1 0;
 }
 
 .Adventurer .value {
-    width: 100%;
-    max-width: 80px;
-    font-weight: bold;
-    line-height: 28px;
-    padding: 1px 12px 1px 0;
-    text-align: right;
-    font-size: var(--font-size-text);
+  width: 100%;
+  max-width: 80px;
+  font-weight: bold;
+  line-height: 28px;
+  padding: 1px 12px 1px 0;
+  text-align: right;
+  font-size: var(--font-size-text);
 
-    background-color: hsla(0,0%,100%,.75);
-    border: 1px solid #d8dde3;
-    border-radius: 0;
-    box-shadow: inset 0 0 4px 0 rgb(139 178 199 / 48%);
-
+  background-color: hsla(0, 0%, 100%, 0.75);
+  border: 1px solid #d8dde3;
+  border-radius: 0;
+  box-shadow: inset 0 0 4px 0 rgb(139 178 199 / 48%);
 }
 
 .Adventurer .value:focus-within {
-    outline: 0;
-    border: 1px solid black;
+  outline: 0;
+  border: 1px solid black;
 }

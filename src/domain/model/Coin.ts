@@ -1,3 +1,3 @@
 export interface Coin {
-    amount: number;
+  amount: number
 }

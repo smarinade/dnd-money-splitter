@@ -1,34 +1,32 @@
 .CoinForm {
-
 }
 
 .actions {
-    margin-top: 16px;
+  margin-top: 16px;
 }
 
 .actions button {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .output {
-
 }
 
 .outputAction {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .subtitle {
-    font-family: Roboto Condensed,Roboto,Helvetica,sans-serif;
-    font-size: var(--font-size-text);
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: var(--font-size-text);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .text {
-    font-family: Roboto,Helvetica,sans-serif;
-    font-size: var(--font-size-desciption);
-    line-height: 1.4;
-    margin: 0;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: var(--font-size-desciption);
+  line-height: 1.4;
+  margin: 0;
 }
